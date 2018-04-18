@@ -1,9 +1,10 @@
 ---
-- name: Create test directory
-  file:
-     path: /tmp/test-CookBook
-     state: directory 
-     mode: 0755
+- tasks:
+   - name: Create test directory
+     file:
+       path: /tmp/test-CookBook
+       state: directory 
+       mode: 0755
 
 
        
