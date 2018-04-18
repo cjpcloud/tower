@@ -2,4 +2,10 @@
 - hosts: localhost
   remote_user: ubuntu
   tasks:
-    - shell: echo "Hello world" 
+     - name: Create Folder
+       file:
+        path: /home/ubuntu/tomcat
+        state: directory
+        mode: 0755
+        owner: ubuntu
+        group: ubuntu
