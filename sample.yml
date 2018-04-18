@@ -2,7 +2,7 @@
 - hosts: 172.31.84.187 
 - tasks:
     - file:
-        path:/opt/hello
+        path: /opt/hello
         state: directory
 
        
