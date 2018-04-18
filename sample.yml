@@ -1,8 +1,9 @@
 ---
-- name: Create test directory
-  file:
-     path: /tmp/test-CookBook
-     state: directory 
-     mode: 0755
-     
+- hosts: 172.31.84.187 
+- tasks:
+    - file:
+        path:/opt/hello
+        state: directory
+
+       
 
