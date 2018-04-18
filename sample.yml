@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: 172.31.27.92
   sudo: yes
   tasks:
    - name: Create test directory
