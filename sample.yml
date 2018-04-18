@@ -1,6 +1,8 @@
 ---
-- hosts: cjp
-  sudo: yes
-  tasks:
-     - shell: echo "Hello world"
+- name: Create test directory
+  file:
+     path: /tmp/test-CookBook
+     state: directory 
+     mode: 0755
+     
 
