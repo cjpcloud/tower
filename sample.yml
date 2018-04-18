@@ -4,7 +4,7 @@
   tasks:
    - name: Create test directory
      file:
-       path: /tmp/test-CookBook
+       path: /root/mahesh.txt
        state: directory 
        mode: 0755
 
