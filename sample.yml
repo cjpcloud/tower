@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.44.29
+- hosts: localhost
   sudo: yes
   tasks:
    - name: Create test directory
