@@ -2,9 +2,5 @@
 - hosts: cjp
   sudo: yes
   tasks:
-    - name: Create Folder
-      file:
-        path: /home/ubuntu/tomcat
-        state: directory
-        mode: 0755
-        
+     - shell: echo "Hello world"
+
