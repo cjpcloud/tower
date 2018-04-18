@@ -1,6 +1,4 @@
 ---
-- hosts: 172.31.81.217
-  sudo: yes
   tasks:
   - name: Create Folder
     file:
