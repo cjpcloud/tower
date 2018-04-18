@@ -1,7 +1,9 @@
 ---
-- name: Create Folder
-  file:
-     path: /home/ubuntu/tomcat
-     state: directory
-     mode: 0755
+- hosts: 172.31.84.187
+  tasks:
+    - name: Create Folder
+      file:
+       path: /home/ubuntu/tomcat
+       state: directory
+       mode: 0755
         
