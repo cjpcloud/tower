@@ -1,6 +1,4 @@
 ---
-- hosts: localhost
-  remote_user: ubuntu
   tasks:
      - name: Create Folder
        file:
