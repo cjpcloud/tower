@@ -1,9 +1,7 @@
 ---
-  tasks:
-     - name: Create Folder
-       file:
-        path: /home/ubuntu/tomcat
-        state: directory
-        mode: 0755
-        owner: ubuntu
-        group: ubuntu
+- name: Create Folder
+  file:
+     path: /home/ubuntu/tomcat
+     state: directory
+     mode: 0755
+        
