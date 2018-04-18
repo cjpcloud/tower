@@ -1,11 +1,9 @@
 ---
-  tasks:
-  - name: Create Folder
-    file:
-      path: /home/ubuntu/tomcat
-      state: directory
-      mode: 0755
-      owner: ubuntu
+- name: Create test directory
+  file:
+     path: /tmp/test-CookBook
+     state: directory 
+     mode: 0755
 
 
        
