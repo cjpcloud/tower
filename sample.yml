@@ -1,5 +1,7 @@
 ---
-- tasks:
+- hosts: 172.31.84.187
+  sudo: yes
+  tasks:
    - name: Create test directory
      file:
        path: /tmp/test-CookBook
