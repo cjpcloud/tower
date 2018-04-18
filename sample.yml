@@ -1,6 +1,6 @@
 ---
 - hosts: 172.31.84.187 
-- tasks:
+  tasks:
     - file:
         path: /opt/hello
         state: directory
