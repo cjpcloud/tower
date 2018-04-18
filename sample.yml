@@ -1,5 +1,5 @@
 ---
-- hosts: cjp
+- hosts: 172.31.84.187
   sudo: yes
   tasks:
   - name: Create Folder
