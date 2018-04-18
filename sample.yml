@@ -2,11 +2,19 @@
 - hosts: 172.31.27.92
   sudo: yes
   tasks:
-   - name: Create test directory
-     file:
-       path: /home/ubuntu/mahesh.txt
-       state: directory 
-       mode: 0755
+    - name: Create test dir172.31.27.92ectory
+      file:
+        path: /tmp/test-CookBook
+        state: directory 
+        mode: 0755
+        owner: ubuntu
+
+    - name: Download Artifacts of ses_algorithm-1.0.jar
+      get_url:
+          url: http://artifacts.sandbox.west.com/artifactory/webapp/#/artifacts/browse/tree/General/libs-release/CookBook/ses_algorithm-1.0.jar
+          dest: /tmp/test-CookBook/ses_algorithm-1.0.jar
+          mode: 0755
+
 
 
        
